@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
-func print() {
-	fmt.Println("Hello World")
+func main() {
+	//test how init func works
+	fmt.Println("testing how init func works")
+	selectNumber()
+
+	//test Unitialized valiable
+	fmt.Println("testing Unitialized valiable")
+	printUninitializedPerson()
 }

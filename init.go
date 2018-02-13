@@ -9,7 +9,7 @@ func init() {
 	number = 12
 }
 
-func main() {
+func selectNumber() {
 	if number == 0 {
 		fmt.Println("Number is not initialized")
 		return
