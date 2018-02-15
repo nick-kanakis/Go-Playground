@@ -8,6 +8,7 @@ type person struct {
 	male bool
 }
 
+//PrintUninitializedPerson tests how an unitiliazed struct would print
 func PrintUninitializedPerson() {
 	var p1 person
 	fmt.Println(p1)

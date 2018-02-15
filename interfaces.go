@@ -17,7 +17,7 @@ func (u *admin) notify() {
 	fmt.Printf("Admin: %v notified", u.name)
 }
 
-//Notifier is implemented by
+//SendNotification uses as input a notifier interface implemented by the admin
 func SendNotification(n notifier) {
 	n.notify()
 }
