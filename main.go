@@ -6,6 +6,14 @@ import (
 	"sync"
 )
 
+const(
+	one = 1 + iota
+	two
+	tree
+	six = 6
+	seven
+)
+
 func main() {
 	//test how init func works
 	fmt.Println("#### testing how init func works")
@@ -48,5 +56,9 @@ func main() {
 	go Player("Marg", score, &wg)
 	score <- 1
 	wg.Wait()
+
+	//Test iota
+	fmt.Println("#### testing iota")
+	fmt.Printf("%v %v %v %v %v", one, two, tree, six, seven)
 
 }
